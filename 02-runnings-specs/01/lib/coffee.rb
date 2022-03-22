@@ -3,6 +3,14 @@ class Coffee
     @ingridients ||= []
   end
 
+  def color
+    ingridients.include?(:milk) ? :light : :dark
+  end
+
+  def temperature
+    ingridients.include?(:milk) ? 190.0 : 205.0
+  end
+
   def add(ingridient)
     ingridients << ingridient
   end
