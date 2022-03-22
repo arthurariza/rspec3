@@ -8,6 +8,6 @@ class Coffee
   end
 
   def price
-    1.00
+    1.00 + ingridients.size * 0.25
   end
 end
