@@ -1,3 +1,5 @@
+require_relative '../lib/coffee'
+
 RSpec.describe 'A cup of coffe' do
   let(:coffee) { Coffee.new }
 
