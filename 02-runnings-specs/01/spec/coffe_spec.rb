@@ -1,5 +1,9 @@
 require_relative '../lib/coffee'
 
+RSpec.configure do |config|
+  config.example_status_persistence_file_path = 'spec/examples.txt'
+end
+
 RSpec.describe 'A cup of coffe' do
   let(:coffee) { Coffee.new }
 
